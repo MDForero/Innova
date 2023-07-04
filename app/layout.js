@@ -9,6 +9,9 @@ import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { usePathname } from 'next/navigation'
 import Image from 'next/image'
 import logo from '../public/logo.jpg'
+import Link from 'next/link'
+import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -17,6 +20,13 @@ const navigation = [
   { name: 'Nosotros', href: 'nosotros' },
   { name: 'Casos de éxito', href: 'casos-de-exito' },
   { name: 'Servicios', href: 'servicios' },
+  { name: 'Contacto', href: 'contacto' },
+]
+
+const redes = [
+  { icon: faFacebook, link: 'https://www.facebook.com/arteinnovacolombia' },
+  { icon: faInstagram, link: 'https://www.instagram.com/instainnova/' },
+  { icon: faWhatsapp, link: 'https://wa.me/+573133898130' },
 ]
 
 function classNames(...classes) {
@@ -171,6 +181,26 @@ export default function RootLayout({ children }) {
           )}
         </Disclosure>
         {children}
+        <footer className="bg-gray-800 w-full py-8">
+          <div className="max-w-screen-xl px-4 mx-auto">
+            <ul className="flex flex-wrap justify-between max-w-screen-md mx-auto text-lg font-light">
+              {navigation.map((item, index) => (<li key={index} className="my-2">
+                <Link className="text-gray-400 hover:text-gray-800 dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href={item.href}>
+                  {item.name}
+                </Link>
+              </li>))}
+            </ul>
+            <div className="pt-8 flex max-w-xs mx-auto items-center justify-around">
+             {redes.map((red, index)=>(<a key={index} href={red.link} className="text-gray-400 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white">
+                <FontAwesomeIcon icon={red.icon}  fill="currentColor" className="h-24 w-24 transition-colors duration-200 hover:text-gray-800 dark:hover:text-white" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"/>
+              </a>))}
+            </div>
+            <div className="text-center text-gray-500 dark:text-gray-200 pt-10 sm:pt-12 font-light flex items-center justify-center">
+              <span>© 2021 Innova.</span>
+            </div>
+          </div>
+        </footer>
+
       </body>
     </html>
   )
