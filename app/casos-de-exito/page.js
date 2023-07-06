@@ -62,14 +62,28 @@ export const metadata = {
 }
 export default function Casos() {
   return (
-    <div>
+    <div className='my-18'>
       <section>
-        <header>
-          
+
+        <header className='max-w-screen-lg mx-auto font-medium'>
+          <h1 className='text-xl text-center '>
+            "¿Buscas una agencia de fotografía y publicidad que te garantice resultados excepcionales?</h1>
+          <h1 className='text-3xl text-center'> No busques más, porque en <span className='italic font-bold'>Innova Fotografía y Publicidad</span> hemos construido una sólida reputación basada en la satisfacción de nuestros clientes.
+          </h1>
+
         </header>
-        <div className="flex -space-x-2 flex-wrap justify-center content-center">
-          {items.map((item, index) => (<a href="#" className="hover:scale-150 hover:z-10 transform ease-in-out transition duration-500">
-            <Image width={0} height={0} className="inline-block h-32 w-32  rounded-full object-contain ring-2 ring-white" src={item.img} alt={item.alt} />
+        <div className='py-8 px-8 max-w-screen-xl mx-auto text-justify text-lg'>
+          <p>
+            No nos conformamos con menos que la perfección, y esto se refleja en la calidad de nuestro trabajo. Cada imagen que capturamos y cada estrategia publicitaria que creamos son cuidadosamente diseñadas para transmitir el mensaje correcto y captar la atención de la audiencia adecuada. Nuestros clientes confían en nosotros porque hemos demostrado una y otra vez nuestra capacidad para generar resultados impactantes y generar un impacto duradero.
+          </p>
+
+          <p>
+            Si estás buscando una agencia que te ofrezca más que simples fotografías y anuncios genéricos, Innova Fotografía y Publicidad es tu mejor elección. Trabajamos incansablemente para mantenernos a la vanguardia de las tendencias actuales, adaptándonos constantemente a un mercado en constante evolución. Al elegirnos, te beneficiarás de nuestra experiencia y conocimientos actualizados, que se traducirán en un mayor alcance, reconocimiento de marca y, en última instancia, un aumento en tus ventas y éxito empresarial.
+          </p>
+        </div>
+        <div className="flex -space-x-2 flex-wrap justify-center content-center max-w-screen-xl mx-auto">
+          {items.map((item, index) => (<a key={index} href="#" className="hover:scale-150 hover:z-10 transform ease-in-out transition duration-500">
+            <Image width={0} height={0} className="inline-block h-32 w-32  rounded-full object-contain ring-2 ring-red-600 bg-white" src={item.img} alt={item.alt} />
           </a>))}
         </div>
       </section>

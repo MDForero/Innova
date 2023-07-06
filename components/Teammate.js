@@ -6,8 +6,8 @@ const Teammate = ({teammate}) => {
   return (
     <div className="p-4 min-w-[200px] ">
       <div className="mb-4 text-center opacity-90">
-        <a href="#" className="relative block">
-          <Image src={imageUrl} width={0} height={0} className="mx-auto object-cover rounded-full h-40 w-40 " alt={name} />
+        <a href="#" className="relative block ring rounded-full w-fit mx-auto ring-red-600 ring-4">
+          <Image src={imageUrl} width={0} height={0} className="object-cover rounded-full h-40 w-40" alt={name} />
         </a>
       </div>
       <div className="text-center">

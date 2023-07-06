@@ -1,13 +1,41 @@
 import Image from 'next/image'
+import img0 from '@/public/images/servicios/1 (1).jpg'
+import img1 from '@/public/images/servicios/1 (2).jpg'
+import img2 from '@/public/images/servicios/1 (3).jpg'
+import img3 from '@/public/images/servicios/1 (4).jpg'
+import img4 from '@/public/images/servicios/1 (5).jpg'
+import img5 from '@/public/images/servicios/1 (6).jpg'
+import img6 from '@/public/images/servicios/1 (7).jpg'
+import img7 from '@/public/images/servicios/1 (8).jpg'
+import img8 from '@/public/images/servicios/1 (9).jpg'
+import img9 from '@/public/images/servicios/1 (10).jpg'
+import img10 from '@/public/images/servicios/1 (11).jpg'
+import img11 from '@/public/images/servicios/1 (12).jpg'
+import img12 from '@/public/images/servicios/1 (13).jpg'
+import img13 from '@/public/images/servicios/1 (14).jpg'
+import img14 from '@/public/images/servicios/1 (15).jpg'
+import img15 from '@/public/images/servicios/1 (16).jpg'
+import img16 from '@/public/images/servicios/1 (17).jpg'
+import img17 from '@/public/images/servicios/1 (18).jpg'
+import img18 from '@/public/images/servicios/1 (19).jpg'
+import img20 from '@/public/images/servicios/1 (21).jpg'
+import img22 from '@/public/images/servicios/1 (23).jpg'
+import img23 from '@/public/images/servicios/1 (24).jpg'
+import img24 from '@/public/images/servicios/1 (25).jpg'
+import img25 from '@/public/images/servicios/1 (26).jpg'
+import img26 from '@/public/images/servicios/1 (27).jpg'
+import img27 from '@/public/images/servicios/1 (28).jpg'
+import img28 from '@/public/images/servicios/1 (29).jpg'
 
 export const metadata = {
   title: "Innova | Servicios"
 }
+const servicios = [, img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12, img13, img14, img15, img16, img17, img18, img20, img22, img23, img24, img25, img26, img27, img28]
 
 export default function Services() {
   return (
-    <main>
-      <section className="bg-white dark:bg-gray-900">
+    <section className="bg-white dark:bg-gray-900">
+      {/* <main>
         <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div className="max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Servicios</h2>
@@ -23,8 +51,17 @@ export default function Services() {
             </div>
           </div>
         </div>
-      </section>
-      
-    </main>
+      </main>
+       */}
+      <div className="py-8 px-4 mx-auto max-w-screen-2xl sm:py-16 lg:px-6">
+        <header className="max-w-screen-md">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Servicios</h2>
+        </header>
+        <div className='max-w-full mx-auto flex flex-wrap justify-center content-center '>
+
+          {servicios.map((servicio, index) => (<Image key={index} src={servicio} width={0} height={0} className='max-w-screen-sm w-full rounded-5 ring ring-4 ring-gray-800 m-2' alt=''/>))}
+        </div>
+      </div>
+    </section>
   )
 }

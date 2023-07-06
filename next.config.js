@@ -4,6 +4,7 @@ const nextConfig = {
     images: {
         domains: ['localhost', 'images.unsplash.com', "www.w3.org"],
     },
+    distDir: 'build',
 }
 
 module.exports = nextConfig

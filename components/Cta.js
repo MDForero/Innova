@@ -25,7 +25,7 @@ const Cta = () => {
                     </div>
                 </div>
             </div>
-            <Image src={image} width={0} height={0} className="absolute top-0 right-0 hidden h-full max-w-1/2 lg:block" />
+            <Image src={image} width={0} height={0} className="absolute top-0 right-0 hidden h-full max-w-1/2 lg:block" alt='' />
         </div>
     )
 }
