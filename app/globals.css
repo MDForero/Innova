@@ -2,3 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-prueba {
+    background-image: linear-gradient(to left bottom, #ec0007, #b70017, #830219, #4f0914, #220203);
+    background-attachment: fixed;
+}
+
+.bg-nav {
+    background-image: linear-gradient(to right bottom, #000000, #380e18, #6b071f, #9e001b, #cd0000);
+}
+
+.bg-footer {
+    background-image: linear-gradient(to left bottom, #cd0000, #9e001b, #6b071f, #380e18, #000000);
+}
+.slide-in {
+    animation: slide-in 0.5s forwards;
+}
+@keyframes slide-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-100%);
+        z-index: -50;
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+        z-index: 50;
+    }
+}

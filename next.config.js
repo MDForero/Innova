@@ -2,9 +2,11 @@
 const nextConfig = {
     reactStrictMode: true,
     images: {
-        domains: ['localhost', 'images.unsplash.com', "www.w3.org"],
+        unoptimized: true,
     },
     distDir: 'build',
+    output: "export",
+    trailingSlash: true,
 }
 
 module.exports = nextConfig

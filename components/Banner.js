@@ -1,7 +1,7 @@
 "use client"
 import { Carousel } from 'react-bootstrap'
 import Image from 'next/image'
-import img0 from '../public/pUBLICIDAD.jpg'
+import img0 from '../public/slider1.jpg'
 import img1 from '../public/MONTERREY.jpg'
 import img2 from '../public/Fotografía 1.jpg'
 import img3 from '../public/Manejo redes.jpg'
@@ -34,9 +34,10 @@ const items = [
     }
 ]
 const Banner = () => {
-    return (<Carousel className='w-screen'>
+    return (<Carousel className='max-w-screen-2xl h-fit'>
         {items.map((item, index) => (<Carousel.Item key={index}>
-            <Image width={0} height={0} className="d-block w-100" src={item.imageUrl} alt={item.title} />
+            
+            <Image className="d-block max-w-full object-cover" src={item.imageUrl} alt={item.title} />
             <Carousel.Caption>
                 <h3>{item.title}</h3>
                 <p>{item.description}</p>
