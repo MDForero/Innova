@@ -1,10 +1,12 @@
 "use client"
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Carousel } from 'react-bootstrap'
 import Image from 'next/image'
 import img0 from '../public/slider1.jpg'
 import img1 from '../public/MONTERREY.jpg'
 import img2 from '../public/Fotografía 1.jpg'
 import img3 from '../public/Manejo redes.jpg'
+
 
 
 const items = [

@@ -32,74 +32,165 @@ import img23 from '@/public/images/logos/RyC eventos.png'
 import img24 from '@/public/images/logos/Tasajera.png'
 import img25 from '@/public/images/logos/tora no maki.png'
 import img26 from '@/public/images/logos/Valthi.png'
+// logos publicos
+import sabana from '../public/images/logos/Institucionales/1200px-Escudo_de_Sabanalarga,_Casanare.svg.png'
+import ejercito from '../public/images/logos/Institucionales/1200px-Escudo_ejercito_de_colombia.png'
+import villanueva from '../public/images/logos/Institucionales/800px-Escudo_Villanueva_Casanare_HD.png'
+import massy from '../public/images/logos/Institucionales/descarga.png'
+import concejo from '../public/images/logos/Institucionales/Escudo Concejo Logo PNG.png'
+import normal from '../public/images/logos/Institucionales/ESCUDO NORMALl.png'
+import tecnico from '../public/images/logos/Institucionales/ESCUDO tecnico.png'
+import meta from '../public/images/logos/Institucionales/Escudo_del_Meta.svg.png'
+import fiscalia from '../public/images/logos/Institucionales/Fiscal-logo.png'
+import redSalud from '../public/images/logos/Institucionales/LOGO COMPLETO.png'
+import ccc from '../public/images/logos/Institucionales/LOGO NEGATIVO - CCC.png'
+import epm from '../public/images/logos/Institucionales/Logo.png'
+import gobernacioMeta from '../public/images/logos/Institucionales/logo2212.png'
+import ecopetrol from '../public/images/logos/Institucionales/Logo_Ecopetrol.png'
+import ocensa from '../public/images/logos/Institucionales/ocensa.png'
 
+export const logos = {
+    privados: [
+        { img: img0, alt: 'Anayibe torres' },
+        { img: img1, alt: 'Arepa y tizon' },
+        { img: img2, alt: 'Asovida' },
+        { img: img3, alt: 'Blue' },
+        { img: img4, alt: 'ByA' },
+        { img: img5, alt: 'Cactus' },
+        { img: img6, alt: 'Casa de Reinas' },
+        { img: img7, alt: 'Chocofantasy' },
+        { img: img8, alt: 'Cositas Lindas' },
+        { img: img9, alt: 'EDS Morichal' },
+        { img: img10, alt: 'El campo- mi placita' },
+        { img: img11, alt: 'El profe' },
+        { img: img12, alt: 'Ferretodo' },
+        { img: img13, alt: 'Game center' },
+        { img: img14, alt: 'Intimo' },
+        { img: img15, alt: 'La Corona' },
+        { img: img16, alt: 'La Roca' },
+        { img: img17, alt: 'los lagos' },
+        { img: img18, alt: 'merengon' },
+        { img: img19, alt: 'monserrat' },
+        { img: img20, alt: 'Olimpico' },
+        { img: img21, alt: 'palo de agua' },
+        { img: img22, alt: 'piolina' },
+        { img: img23, alt: 'RyC eventos' },
+        { img: img24, alt: 'Tasajera' },
+        { img: img25, alt: 'tora no maki' },
+        { img: img26, alt: 'Valthi' },],
+    publicos: [
+        {
+            img: sabana,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: ejercito,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: villanueva,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: massy,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: concejo,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: normal,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: tecnico,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: meta,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: fiscalia,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: redSalud,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: ccc,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: epm,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: gobernacioMeta,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: ecopetrol,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
+        {
+            img: ocensa,
+            alt: 'logo de empresas que han confiado en nosotros'
+        },
 
-export const logos = [
-  { img: img0, alt: 'Anayibe torres' },
-  { img: img1, alt: 'Arepa y tizon' },
-  { img: img2, alt: 'Asovida' },
-  { img: img3, alt: 'Blue' },
-  { img: img4, alt: 'ByA' },
-  { img: img5, alt: 'Cactus' },
-  { img: img6, alt: 'Casa de Reinas' },
-  { img: img7, alt: 'Chocofantasy' },
-  { img: img8, alt: 'Cositas Lindas' },
-  { img: img9, alt: 'EDS Morichal' },
-  { img: img10, alt: 'El campo- mi placita' },
-  { img: img11, alt: 'El profe' },
-  { img: img12, alt: 'Ferretodo' },
-  { img: img13, alt: 'Game center' },
-  { img: img14, alt: 'Intimo' },
-  { img: img15, alt: 'La Corona' },
-  { img: img16, alt: 'La Roca' },
-  { img: img17, alt: 'los lagos' },
-  { img: img18, alt: 'merengon' },
-  { img: img19, alt: 'monserrat' },
-  { img: img20, alt: 'Olimpico' },
-  { img: img21, alt: 'palo de agua' },
-  { img: img22, alt: 'piolina' },
-  { img: img23, alt: 'RyC eventos' },
-  { img: img24, alt: 'Tasajera' },
-  { img: img25, alt: 'tora no maki' },
-  { img: img26, alt: 'Valthi' },
-]
+    ]
+}
 export const team = [
     {
         name: 'Liced Rojas',
         role: 'Asistente administrativo',
         descripcion: "Nuestro amable asistente administrativo es el núcleo de nuestra organización. Con habilidades excepcionales de organización y una actitud proactiva, mantiene el flujo de trabajo eficiente y efectivo. ",
         imageUrl: colaborador0,
-        social:[
-            {icon: faFacebook,
-            href:'https://www.facebook.com/lizeeth.rojas.7'},
-            {icon: faInstagram,
-            href:'https://www.instagram.com/liced_21/'}
+        social: [
+            {
+                icon: faFacebook,
+                href: 'https://www.facebook.com/lizeeth.rojas.7'
+            },
+            {
+                icon: faInstagram,
+                href: 'https://www.instagram.com/liced_21/'
+            }
 
         ]
     },
     {
-        name: 'Jeisson Piraquive',
+        name: 'Jeisson González',
         role: 'Fotografo',
         descripcion: " Nuestro talentoso fotógrafo es un apasionado de la captura de momentos especiales y únicos. Con un ojo meticuloso para los detalles y una creatividad innata, se especializa en retratar emociones y contar historias a través de sus imágenes.",
         imageUrl: colaborador3,
-        social:[
-            {icon: faFacebook,
-            href:'https://www.facebook.com/yeeiizon.goonsalez'},
-            {icon: faInstagram,
-            href:'https://www.facebook.com/yeeiizon.goonsalez'}
+        social: [
+            {
+                icon: faFacebook,
+                href: 'https://www.facebook.com/yeeiizon.goonsalez'
+            },
+            {
+                icon: faInstagram,
+                href: 'https://www.facebook.com/yeeiizon.goonsalez'
+            }
 
         ]
     },
     {
-        name: 'Mairon Piñeros',
+        name: 'Andres Piñeros',
         role: 'Diseñador',
         descripcion: " Nuestro talentoso diseñador es un experto en dar vida a las ideas a través de la creatividad visual. Con una sensibilidad artística excepcional y una pasión por la estética, se destaca en la creación de diseños innovadores y atractivos. ",
         imageUrl: colaborador4,
-        social:[
-            {icon: faFacebook,
-            href:'https://www.facebook.com/andresfelipe.riofriopineros'},
-            {icon: faInstagram,
-            href:'https://www.instagram.com/pinerosandres945/'}
+        social: [
+            {
+                icon: faFacebook,
+                href: 'https://www.facebook.com/andresfelipe.riofriopineros'
+            },
+            {
+                icon: faInstagram,
+                href: 'https://www.instagram.com/pinerosandres945/'
+            }
         ]
     },
     {
@@ -107,11 +198,15 @@ export const team = [
         role: 'Gerente general',
         descripcion: "Nuestro dedicado Gerente General es el líder de nuestro equipo y la fuerza motriz detrás de nuestra empresa. Con una visión estratégica y una vasta experiencia en el campo publicidad, dirige y supervisa todas las operaciones con sabiduría y eficacia.",
         imageUrl: colaborador2,
-        social:[
-            {icon: faFacebook,
-            href:'https://www.facebook.com/JAVIERARIASV'},
-            {icon: faInstagram,
-            href:'https://www.instagram.com/javierariasinnova/'}
+        social: [
+            {
+                icon: faFacebook,
+                href: 'https://www.facebook.com/JAVIERARIASV'
+            },
+            {
+                icon: faInstagram,
+                href: 'https://www.instagram.com/javierariasinnova/'
+            }
         ]
     },
 ]

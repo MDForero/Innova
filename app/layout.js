@@ -1,6 +1,5 @@
 'use client'
 
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './globals.css'
 import { Inter } from 'next/font/google'
 import { Fragment } from 'react'
@@ -235,31 +234,29 @@ export default function RootLayout({ children }) {
 
         </Disclosure>
 
-        <div className='bg-prueba max-w-screen-2xl mx-auto'>
-          {children}
-          <footer className="w-full py-8">
-            <div className="max-w-screen-xl px-4 mx-auto">
-              <ul className="flex flex-wrap justify-between max-w-screen-md mx-auto text-xl  font-medium ">
-                {navigation.map((item, index) => (<li key={index} className="my-2">
-                  <Link className="text-gray-300 hover:text-white dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href={item.href}>
-                    {item.name}
-                  </Link>
-                </li>))}
-              </ul>
-              <div className="pt-8 flex max-w-xs mx-auto items-center justify-around">
-                {redes.map((red, index) => (<a key={index} href={red.link} className="text-gray-300 transition-colors duration-200 hover:text-white dark:hover:text-white">
-                  <FontAwesomeIcon icon={red.icon} fill="currentColor" className="h-24 w-24 transition-colors duration-200 hover:text-white dark:hover:text-white" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" />
-                </a>))}
-              </div>
-              <div className="text-center text-gray-300 dark:text-gray-500 pt-10 sm:pt-12 font-light flex items-center justify-center">
-                <span>© 2021 Innova.</span>
-              </div>
-            </div>
-          </footer>
-        </div>
+        {children}
         <a className='fixed  right-1 bottom-1' href="#">
-          <FontAwesomeIcon icon={faWhatsapp} className='text-white h-12 w-12' />
+          <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 h-12 w-12' />
         </a>
+        <footer className="w-full py-8 bg-footer">
+          <div className="max-w-screen-xl px-4 mx-auto">
+            <ul className="flex flex-wrap justify-between max-w-screen-md mx-auto text-xl  font-medium ">
+              {navigation.map((item, index) => (<li key={index} className="my-2">
+                <Link className="text-gray-300 hover:text-white dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href={item.href}>
+                  {item.name}
+                </Link>
+              </li>))}
+            </ul>
+            <div className="pt-8 flex max-w-xs mx-auto items-center justify-around">
+              {redes.map((red, index) => (<a key={index} href={red.link} className="text-gray-300 transition-colors duration-200 hover:text-white dark:hover:text-white">
+                <FontAwesomeIcon icon={red.icon} fill="currentColor" className="h-24 w-24 transition-colors duration-200 hover:text-white dark:hover:text-white" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" />
+              </a>))}
+            </div>
+            <div className="text-center text-gray-300 dark:text-gray-500 pt-10 sm:pt-12 font-light flex items-center justify-center">
+              <span>© 2021 Innova.</span>
+            </div>
+          </div>
+        </footer>
       </body>
     </html>
   )
