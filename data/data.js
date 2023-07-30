@@ -3,7 +3,7 @@ import colaborador1 from '../public/images/teammate/Sergio Frias.png'
 import colaborador2 from '../public/images/teammate/Javier Arias.png'
 import colaborador3 from '../public/images/teammate/Yeison Gonzales.png'
 import colaborador4 from '../public/images/teammate/andres.png'
-import { faFacebook, faInstagram } from '@fortawesome/free-brands-svg-icons'
+import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 
 import img0 from '@/public/images/logos/anayibe.png'
 import img1 from '@/public/images/logos/Arepa y tizon.png'
@@ -255,3 +255,23 @@ export const team = [
         ]
     },
 ]
+
+export const contacto ={
+    email: 'contacto@innovacasanare.com',
+    phone: '+573208517777',
+    address: 'Calle 19 # 20- 30 Yopal, Casanare',
+    ubicacion: 'https://goo.gl/maps/6Z1Z9Z2Z2Z2Z2Z2Z2',
+    social: [
+        {
+            icon: faFacebook,
+            href: 'https://www.facebook.com/InnovaCasanare'
+        },
+        {
+            icon: faInstagram,
+            href: 'https://www.instagram.com/innovacasanare/'
+        },
+        {
+            icon: faWhatsapp,
+            href: 'https://wa.me/573208517777'
+        }]
+}

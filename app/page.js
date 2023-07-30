@@ -5,9 +5,8 @@ import Team from '@/components/Team'
 import { carousel1, carousel2, logos, team } from '@/data/data'
 import Logos from '@/components/Logos'
 import GridCta from '@/components/GridCta'
-import MoveLeft from '@/components/MoveLeft'
-import MoveRight from '@/components/MoveRight'
-
+import { MoveLeft, MoveRight, FadeIn, ZoomIn } from '@/components/Animation'
+import ButtonCta from '@/components/ButtonCta'
 
 
 
@@ -27,15 +26,7 @@ export default function Home() {
             <div className="max-w-screen-md">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">INNOVA</h2>
               <p className="mb-8 font-light text-gray-700 sm:text-xl  text-justify">  Es una agencia de publicidad y estudio fotográfico ubicado en Monterrey Casanare, con cobertura de ventas a nivel nacional. Desde el año 2014, nuestra empresa se ha dedicado a ofrecer productos y servicios de alta calidad. Contamos con un equipo de trabajo altamente calificado, capaz de brindar soluciones creativas y efectivas en las artes gráficas y audiovisuales para nuestros clientes. La combinación de diversas habilidades creativas de nuestros colaboradores nos permite destacar en el mercado y ofrecer resultados excepcionales. Estamos comprometidos en seguir innovando y superando las expectativas de nuestros clientes en cada proyecto que emprendemos.</p>
-              <div className="flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4">
-                <a href="#" className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-white bg-primary-700 rounded-lg hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                  Get started
-                </a>
-                <a href="#" className="inline-flex items-center justify-center px-4 py-2.5 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                  <svg className="mr-2 -ml-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path></svg>
-                  View more
-                </a>
-              </div>
+             <ButtonCta />
             </div>
           </div>
           <div className="relative">
@@ -46,7 +37,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-      
+
       </MoveLeft>
       <section id='servicios' className="p-8 dark:bg-gray-800 m-auto" >
         <h2 className='text-center text-4xl font-bold text-gray-700'>Servicios</h2>\
@@ -56,9 +47,12 @@ export default function Home() {
               <GridCta items={carousel1} />
             </div>
             <div className='md:w-2/5'>
-              <h3 className='text-center text-2xl font-medium text-gray-900'>Publicidad</h3>
-              <p className='text-center text-lg font-medium'>Durante años nos hemos caracterizado por ofrecer todo lo que cualquier tipo de negocio puede necesitar para impulsarse en el mercado y lograr los objetivos de posicionamiento de nuestros clientes, la publicidad digital y física aplicada a comunidades especificas donde ya se ha estudiado el mercado para lograr los objetivos esperados.</p>
+              <h3 className='text-center text-3xl pb-8 font-medium text-gray-900'>"Campañas de Publicidad Estratégica: Impulsa tu Negocio hacia el Éxito"</h3>
+
+              <p className='text-center text-xl font-medium'>¿Quieres que tu negocio alcance nuevas alturas en el mercado? En <strong>INNOVA</strong>, nos enorgullecemos de brindarte todo lo que necesitas para alcanzar tus objetivos de posicionamiento. Nuestra publicidad digital y física, enfocada en comunidades específicas, ha sido cuidadosamente diseñada para asegurar que logres los resultados esperados. ¡Descubre cómo podemos potenciar tu marca hoy mismo! ¡Contáctanos para una asesoría personalizada!<br/> #ÉxitoAsegurado #PublicidadEstratégica #ImpulsaTuNegocio</p>
+            <ButtonCta/>
             </div>
+
           </div>
         </MoveLeft>
         <MoveRight>
@@ -67,30 +61,35 @@ export default function Home() {
               <GridCta items={carousel2} />
             </div>
             <div className='md:w-2/5'>
-              <h3 className='text-center text-2xl font-medium text-gray-900'>Fotografía</h3>
-              <p className='text-center text-lg font-medium '>Nuestro servicio de fotografía esta ajustado a los requerimientos de diferentes tipos de clientes, siendo las sesiones personales las mas buscadas y adquiridas por quienes nos visitan en el día a día, buscamos que la comodidad sea nuestro principal objetivo para lograr resultados naturales y maravillosos.</p>
+              <h3 className='text-center text-3xl font-medium text-gray-900'>Captura Momentos Únicos con Nuestro Servicio de Fotografía Personal</h3>
+              <p className='text-center text-xl font-medium '>En <strong>INNOVA</strong>, entendemos que cada cliente es único y especial. Por eso, nuestro servicio de fotografía está diseñado para satisfacer las necesidades individuales de diferentes tipos de clientes. Nuestras sesiones personales son las más buscadas y adquiridas por quienes nos visitan a diario, porque buscamos que te sientas cómodo y relajado, permitiéndonos capturar resultados naturales y maravillosos.<br/> #FotografíaProfesional #CapturaMomentosÚnicos #ResultadosMaravillosos</p>
+              <ButtonCta/>
             </div>
           </div>
         </MoveRight>
       </section>
 
-      <section id='casos' className="p-8 dark:bg-gray-800 m-auto">
-        <div className='py-8'>
-          <h2 className='text-center text-4xl font-bold text-gray-700'>Empresas que han confiado en nosotros</h2>
-          <h3 className='text-center text-2xl font-medium text-gray-900'>Sector publico</h3>
-        </div>
-        <Logos logo={logos.publicos} height={24} width={24} />
+      <ZoomIn>
+        <section id='casos' className="p-8 dark:bg-gray-800 m-auto">
+          <div className='py-8'>
+            <h2 className='text-center text-4xl font-bold text-gray-700'>Empresas que han confiado en nosotros</h2>
+            <h3 className='text-center text-2xl font-medium text-gray-900'>Sector publico</h3>
+          </div>
+          <Logos logo={logos.publicos} height={24} width={24} />
 
-        <h3 className='py-8 text-center font-medium text-2xl text-gray-900'>Sector privado</h3>
-        <Logos logo={logos.privados} height={24} width={24} />
-      </section >
+          <h3 className='py-8 text-center font-medium text-2xl text-gray-900'>Sector privado</h3>
+          <Logos logo={logos.privados} height={24} width={24} />
+        </section >
+      </ZoomIn>
       <section id='team' className="p-8 dark:bg-gray-800 m-auto">
+      
         <Team />
-        <div className=''>
+      
+        <FadeIn>
           <div className="flex flex-row gap-3 items-center gap md:flex-row justify-evenly flex-wrap">
             {team.map((teammate, index) => (<Teammate key={index} teammate={teammate} />))}
           </div>
-        </div>
+        </FadeIn>
       </section>
     </div>
   </div>
