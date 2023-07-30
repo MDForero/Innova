@@ -40,10 +40,6 @@ const Banner = () => {
         {items.map((item, index) => (<Carousel.Item key={index}>
             
             <Image className="d-block max-w-full object-cover" src={item.imageUrl} alt={item.title} />
-            <Carousel.Caption>
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-            </Carousel.Caption>
         </Carousel.Item>))}
     </Carousel>
     )

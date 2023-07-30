@@ -2,9 +2,9 @@ import Teammate from '@/components/Teammate'
 import Image from 'next/image'
 import Banner from '@/components/Banner'
 import Team from '@/components/Team'
-import { logos, team } from '@/data/data'
+import { carousel1, carousel2, logos, team } from '@/data/data'
 import Logos from '@/components/Logos'
-import flayer from '../public/Flyer INNOVA ultimo.jpg'
+import GridCta from '@/components/GridCta'
 
 
 
@@ -46,23 +46,20 @@ export default function Home() {
       <section id='servicios' className="p-8 dark:bg-gray-800 m-auto">
         <div className='py-8'>
           <h2 className='text-center text-4xl font-bold text-gray-700'>Servicios</h2>\
-          <div>
-            <div className='flex flex-row  items-center flex-wrap md:flex-row gap-4 justify-evenly'>
-              <Image src={flayer} width={0} height={0} alt="" className="md:w-2/6 " />
+            <div className='flex flex-row  items-center flex-wrap md:flex-row gap-4 justify-evenly mb-24  '>
+              <GridCta items={carousel1} />
               <div className='md:w-2/5'>
-
                 <h3 className='text-center text-2xl font-medium text-gray-900'>Publicidad</h3>
-                <p className='text-justify'>Durante años nos hemos caracterizado por ofrecer todo lo que cualquier tipo de negocio puede necesitar para impulsarse en el mercado y lograr los objetivos de posicionamiento de nuestros clientes, la publicidad digital y física aplicada a comunidades especificas donde ya se ha estudiado el mercado para lograr los objetivos esperados.</p>
+                <p className='text-center text-lg font-medium'>Durante años nos hemos caracterizado por ofrecer todo lo que cualquier tipo de negocio puede necesitar para impulsarse en el mercado y lograr los objetivos de posicionamiento de nuestros clientes, la publicidad digital y física aplicada a comunidades especificas donde ya se ha estudiado el mercado para lograr los objetivos esperados.</p>
               </div>
             </div>
             <div className='flex flex-wrap flex-row-reverse items-center  md:flex-row gap-4 justify-evenly'>
-              <Image src={flayer} width={0} height={0} alt="" className="md:w-2/6" />
+              <GridCta items={carousel2} />
               <div className='md:w-2/5'>
                 <h3 className='text-center text-2xl font-medium text-gray-900'>Fotografía</h3>
-                <p className='text-justify'>Nuestro servicio de fotografía esta ajustado a los requerimientos de diferentes tipos de clientes, siendo las sesiones personales las mas buscadas y adquiridas por quienes nos visitan en el día a día, buscamos que la comodidad sea nuestro principal objetivo para lograr resultados naturales y maravillosos.</p>
+                <p className='text-center text-lg font-medium '>Nuestro servicio de fotografía esta ajustado a los requerimientos de diferentes tipos de clientes, siendo las sesiones personales las mas buscadas y adquiridas por quienes nos visitan en el día a día, buscamos que la comodidad sea nuestro principal objetivo para lograr resultados naturales y maravillosos.</p>
               </div>
             </div>
-          </div>
         </div>
       </section>
 
@@ -71,7 +68,7 @@ export default function Home() {
           <h2 className='text-center text-4xl font-bold text-gray-700'>Empresas que han confiado en nosotros</h2>
           <h3 className='text-center text-2xl font-medium text-gray-900'>Sector publico</h3>
         </div>
-        <Logos logo={logos.publicos} height={32} width={32}/>
+        <Logos logo={logos.publicos} height={24} width={24}/>
 
         <h3 className='py-8 text-center font-medium text-2xl text-gray-900'>Sector privado</h3>
         <Logos logo={logos.privados} height={24} width={24}/>

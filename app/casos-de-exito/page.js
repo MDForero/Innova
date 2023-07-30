@@ -29,7 +29,7 @@ export default function Casos() {
             Si estás buscando una agencia que te ofrezca más que simples fotografías y anuncios genéricos, Innova Fotografía y Publicidad es tu mejor elección. Trabajamos incansablemente para mantenernos a la vanguardia de las tendencias actuales, adaptándonos constantemente a un mercado en constante evolución. Al elegirnos, te beneficiarás de nuestra experiencia y conocimientos actualizados, que se traducirán en un mayor alcance, reconocimiento de marca y, en última instancia, un aumento en tus ventas y éxito empresarial.
           </p>
         </div>
-        <Logos logo={logos.privados.concat(logos.publicos)} width={32} height={32} />
+        <Logos logo={logos.privados.concat(logos.publicos)} width={24} height={24} />
       </section>
     </div>
   )

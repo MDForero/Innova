@@ -15,7 +15,7 @@ a {
     background-image: linear-gradient(to left bottom, #cd0000, #9e001b, #6b071f, #380e18, #000000);
 }
 .slide-in {
-    animation: slide-in 0.5s forwards;
+    animation: slide-in 1s forwards;
 }
 @keyframes slide-in {
     0% {

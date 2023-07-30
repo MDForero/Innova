@@ -33,10 +33,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 const navigation = [
-  { name: 'Inicio', href: '/' },
-  { name: 'Nosotros', href: '/nosotros' },
-  { name: 'Casos de éxito', href: '/casos-de-exito' },
+  { name: 'Innova', href: '/' },
+  { name: 'Catalogo', href: '/catalogo' },
   { name: 'Servicios', href: '/servicios' },
+  { name: 'Casos de éxito', href: '/casos-de-exito' },
+  { name: 'Nosotros', href: '/nosotros' },
   { name: 'Contacto', href: '/contacto' },
 ]
 
@@ -233,8 +234,9 @@ export default function RootLayout({ children }) {
           )}
 
         </Disclosure>
-
-        {children}
+        <div className='bg-gray-100'>
+          {children}
+        </div>
         <a className='fixed  right-1 bottom-1' href="#">
           <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 h-12 w-12' />
         </a>

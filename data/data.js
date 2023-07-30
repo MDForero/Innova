@@ -48,6 +48,55 @@ import epm from '../public/images/logos/Institucionales/Logo.png'
 import gobernacioMeta from '../public/images/logos/Institucionales/logo2212.png'
 import ecopetrol from '../public/images/logos/Institucionales/Logo_Ecopetrol.png'
 import ocensa from '../public/images/logos/Institucionales/ocensa.png'
+// servicios
+import serimg0 from '@/public/images/servicios/1 (1).jpg'
+import serimg1 from '@/public/images/servicios/1 (2).jpg'
+import serimg2 from '@/public/images/servicios/1 (3).jpg'
+import serimg3 from '@/public/images/servicios/1 (4).jpg'
+import serimg4 from '@/public/images/servicios/1 (5).jpg'
+import serimg5 from '@/public/images/servicios/1 (6).jpg'
+import serimg6 from '@/public/images/servicios/1 (7).jpg'
+import serimg7 from '@/public/images/servicios/1 (8).jpg'
+import serimg8 from '@/public/images/servicios/1 (9).jpg'
+import serimg9 from '@/public/images/servicios/1 (10).jpg'
+import serimg10 from '@/public/images/servicios/1 (11).jpg'
+import serimg11 from '@/public/images/servicios/1 (12).jpg'
+import serimg12 from '@/public/images/servicios/1 (13).jpg'
+import serimg13 from '@/public/images/servicios/1 (14).jpg'
+import serimg14 from '@/public/images/servicios/1 (15).jpg'
+import serimg15 from '@/public/images/servicios/1 (16).jpg'
+import serimg16 from '@/public/images/servicios/1 (17).jpg'
+import serimg17 from '@/public/images/servicios/1 (18).jpg'
+import serimg18 from '@/public/images/servicios/1 (19).jpg'
+import serimg20 from '@/public/images/servicios/1 (21).jpg'
+import serimg22 from '@/public/images/servicios/1 (23).jpg'
+import serimg23 from '@/public/images/servicios/1 (24).jpg'
+import serimg24 from '@/public/images/servicios/1 (25).jpg'
+import serimg25 from '@/public/images/servicios/1 (26).jpg'
+import serimg26 from '@/public/images/servicios/1 (27).jpg'
+import serimg27 from '@/public/images/servicios/1 (28).jpg'
+import serimg28 from '@/public/images/servicios/1 (29).jpg'
+
+
+
+
+export const carousel1 = [
+    { img: serimg0, alt: 'sabana' },
+    { img: serimg1, alt: 'ejercito' },
+    { img: serimg2, alt: 'villanueva' },
+    { img: serimg3, alt: 'massy' },
+    { img: serimg3, alt: 'massy' },
+    { img: serimg3, alt: 'massy' },
+]
+
+export const carousel2 = [
+    { img: serimg4, alt: 'concejo' },
+    { img: serimg5, alt: 'normal' },
+    { img: serimg6, alt: 'tecnico' },
+    { img: serimg7, alt: 'meta' },
+    { img: serimg7, alt: 'meta' },
+    { img: serimg7, alt: 'meta' },
+]
 
 export const logos = {
     privados: [
@@ -121,10 +170,6 @@ export const logos = {
         },
         {
             img: ccc,
-            alt: 'logo de empresas que han confiado en nosotros'
-        },
-        {
-            img: epm,
             alt: 'logo de empresas que han confiado en nosotros'
         },
         {
