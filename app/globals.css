@@ -47,7 +47,7 @@ a {
 }
 
 .move-left {
-    animation: move-left 0.5s forwards;
+    animation: move-left 1s forwards;
 }
 
 @keyframes move-left {
@@ -58,6 +58,6 @@ a {
     }
     100% {
         opacity: 1;
-        transform: translateX(0%);
+        transform: translateX(0px);
     }
 }

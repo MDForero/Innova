@@ -1,10 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
 
-const GridCta = ({ items }) => {
+const GridCta = ({ items, active }) => {
     return (
-        <div className='w-2/5 grid grid-cols-3 gap-2'>
+        <div className='grid grid-cols-3 gap-2'>
             {items.map((item, index) => (
+                
                 <Image
                     key={index}
                     src={item.img}
