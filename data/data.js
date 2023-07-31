@@ -258,20 +258,20 @@ export const team = [
 
 export const contacto ={
     email: 'contacto@innovacasanare.com',
-    phone: '+573208517777',
-    address: 'Calle 19 # 20- 30 Yopal, Casanare',
-    ubicacion: 'https://goo.gl/maps/6Z1Z9Z2Z2Z2Z2Z2Z2',
+    phone: '+573133898130',
+    address: 'Carrera 18 #N° 9 - 58, Alcaravanes, Monterrey, Casanare',
+    ubicacion: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321.51611359002163!2d-72.89552000942759!3d4.878035259930888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad280b04865a9%3A0xf0896dbad89a138a!2sINNOVA%20FOTOGRAF%C3%8DA%20Y%20PUBLICIDAD!5e0!3m2!1ses!2sco!4v1690732020821!5m2!1ses!2sco',
     social: [
         {
             icon: faFacebook,
-            href: 'https://www.facebook.com/InnovaCasanare'
+            href: 'https://www.facebook.com/arteinnovacolombia'
         },
         {
             icon: faInstagram,
-            href: 'https://www.instagram.com/innovacasanare/'
+            href: 'https://www.instagram.com/instainnova/'
         },
         {
             icon: faWhatsapp,
-            href: 'https://wa.me/573208517777'
+            href: `https://api.whatsapp.com/send?phone=57$3133898130&text=Hola%20Innova`
         }]
 }

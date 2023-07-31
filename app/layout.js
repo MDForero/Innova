@@ -29,6 +29,7 @@ import logo from '../public/logo.jpg'
 import Link from 'next/link'
 import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { contacto } from '@/data/data'
 
 
 
@@ -240,20 +241,36 @@ export default function RootLayout({ children }) {
         <a className='fixed  right-1 bottom-1' href="#">
           <FontAwesomeIcon icon={faWhatsapp} className='text-green-600 h-12 w-12' />
         </a>
-        <footer className="w-full py-8 bg-footer">
-          <div className="max-w-screen-xl px-4 mx-auto">
-            <ul className="flex flex-wrap justify-between max-w-screen-md mx-auto text-xl  font-medium ">
+        <footer className="w-full  py-8 bg-footer">
+          <div className="max-w-screen-xl flex flex-col gap-4 px-4 mx-auto">
+            <ul className="flex flex-wrap justify-between gap-8 max-w-screen-md mx-auto text-xl  font-medium ">
               {navigation.map((item, index) => (<li key={index} className="my-2">
                 <Link className="text-gray-300 hover:text-white dark:text-gray-300 dark:hover:text-white transition-colors duration-200" href={item.href}>
                   {item.name}
                 </Link>
               </li>))}
             </ul>
-            <div className="pt-8 flex max-w-xs mx-auto items-center justify-around">
+            <div className=" flex max-w-lg mx-auto items-center justify-evenly w-full">
               {redes.map((red, index) => (<a key={index} href={red.link} className="text-gray-300 transition-colors duration-200 hover:text-white dark:hover:text-white">
-                <FontAwesomeIcon icon={red.icon} fill="currentColor" className="h-24 w-24 transition-colors duration-200 hover:text-white dark:hover:text-white" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg" />
+                <FontAwesomeIcon icon={red.icon} fill="currentColor" className="h-12 w-12 transition-colors duration-200 hover:text-white dark:hover:text-white" />
               </a>))}
             </div>
+            <section id='contacto' className="mx-auto">
+              <div className='flex flex-col items-center justify-center'>
+                <div className='flex flex-col items-center justify-center'>
+                  <h3 className='text-center text-2xl font-medium text-gray-300'>Ubicación</h3>
+                  <p className='text-center text-xl font-medium text-gray-200'>{contacto.address}</p>
+                </div>
+                <div className='flex flex-col items-center justify-center'>
+                  <h3 className='text-center text-2xl font-medium text-gray-300'>Teléfono</h3>
+                  <p className='text-center text-xl font-medium text-gray-200'>{contacto.phone}</p>
+                </div>
+                <div className='flex flex-col items-center justify-center'>
+                  <h3 className='text-center text-2xl font-medium text-gray-300'>Correo</h3>
+                  <p className='text-center text-xl font-medium text-gray-200'>{contacto.email}</p>
+                </div>
+              </div>
+            </section>
             <div className="text-center text-gray-300 dark:text-gray-500 pt-10 sm:pt-12 font-light flex items-center justify-center">
               <span>© 2021 Innova.</span>
             </div>

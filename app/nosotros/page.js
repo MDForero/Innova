@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Innova from "@/public/images/servicios/logogray.jpg"
-
+import teamimg from '@/public/images/teammate/PerfilINNOVA.jpg'
 import Teammate from '@/components/Teammate'
 import mision from "@/public/images/servicios/1 (19).jpg"
 import Team from '@/components/Team'
@@ -13,7 +13,7 @@ export const metadata = {
 export default function Nosotros() {
   return <div className=''>
     <main className="relative">
-      <Image src={Innova} width={0} height={0} alt="Litografia" className="w-full h-[450px] object-cover" />
+      <Image src={teamimg} width={0} height={0} alt="Litografia" className="w-full h-[70vh] object-cover" />
     </main>
 
     <section className='flex text-black py-14 flex-col items-center md:flex-row justify-evenly flex-wrap'>
