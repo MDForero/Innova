@@ -16,24 +16,17 @@ export const metadata = {
 
 export default function Home() {
   return <div className='pb-12 '>
-    <main className='h-screen flex'>
+    <main className='flex justify-center'>
       <Banner />
     </main>
-    <div className=" relative flex flex-wrap  rounded-3xl  w-full m-auto ">
+    <div className=" relative flex flex-wrap flex-col gap-24 max-w-screen-2xl px-2 rounded-3xl  w-full m-auto ">
       <MoveLeft>
-        <section id='descripcion' className=" dark:bg-gray-900 m-auto flex ">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 min-h-[70vh]">
-            <div className="max-w-screen-md">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 ">INNOVA</h2>
+        <section id='descripcion' className=" dark:bg-gray-900 mx-auto mt-12">
+          <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
+            <div className="max-w-screen-lg">
+              <h2 className="mb-2 text-4xl tracking-tight font-extrabold  text-gray-900 ">INNOVA</h2>
               <p className="mb-8 font-light text-gray-700 sm:text-xl  text-justify">  Es una agencia de publicidad y estudio fotográfico ubicado en Monterrey Casanare, con cobertura de ventas a nivel nacional. Desde el año 2014, nuestra empresa se ha dedicado a ofrecer productos y servicios de alta calidad. Contamos con un equipo de trabajo altamente calificado, capaz de brindar soluciones creativas y efectivas en las artes gráficas y audiovisuales para nuestros clientes. La combinación de diversas habilidades creativas de nuestros colaboradores nos permite destacar en el mercado y ofrecer resultados excepcionales. Estamos comprometidos en seguir innovando y superando las expectativas de nuestros clientes en cada proyecto que emprendemos.</p>
               <ButtonCta />
-            </div>
-          </div>
-          <div className="relative">
-            <div className="absolute inset-0 flex flex-col" aria-hidden="true">
-              <div className="flex-1">
-                <Image src={'/public/images/hero.jpg'} width={0} height={0} alt="" className="w-full h-full" />
-              </div>
             </div>
           </div>
         </section>
