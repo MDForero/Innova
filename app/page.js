@@ -16,7 +16,7 @@ export const metadata = {
 
 export default function Home() {
   return <div className='pb-12 '>
-    <main className='flex justify-center'>
+    <main className='flex justify-center w-full'>
       <Banner />
     </main>
     <div className=" relative flex flex-wrap flex-col gap-24 max-w-screen-2xl px-2 rounded-3xl  w-full m-auto ">

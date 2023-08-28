@@ -9,7 +9,7 @@ const GridCta = ({ items, active }) => {
                 <Image
                     key={index}
                     src={item.img}
-                    alt=""
+                    alt=""+
                     className={`h-full object-cover ${(index + 1) % 4 === 0 ? 'col-span-2 row-span-2' : 'col-span-1 row-span-1'}`}
                 />
             ))}
