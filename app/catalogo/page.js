@@ -9,3 +9,9 @@ export default function catalogo() {
     </div>
   )
 }
+
+export const metadata = {
+  title: "Innova | Catálogo",
+  description: "Catálogo de productos de INNOVA Publicidad",
+  keywords: "Catálogo, Productos, INNOVA, Publicidad, Monterrey, Casanare, Colombia, Impresión, Sublimación, Bordado, Estampado, Llaveros, Esferos, Camisetas, Camisas, Gorras, Mugs, Tazas, Termos, Agendas, Cuadernos, Libretas, Bolígrafos, Lápices, Lápiz, Memorias, USB, Powerbank, Porta, Documentos, Porta documentos, Porta documentos, Por",
+}

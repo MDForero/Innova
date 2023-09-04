@@ -2,11 +2,12 @@ import Teammate from '@/components/Teammate'
 import Image from 'next/image'
 import Banner from '@/components/Banner'
 import Team from '@/components/Team'
-import { carousel1, carousel2, contacto, logos, team } from '@/data/data'
+import { carousel1, carousel2, contacto, logos, servicios, team } from '@/data/data'
 import Logos from '@/components/Logos'
 import GridCta from '@/components/GridCta'
-import { MoveLeft, MoveRight, FadeIn, ZoomIn } from '@/components/Animation'
+import FadeIn from '@/components/Animation'
 import ButtonCta from '@/components/ButtonCta'
+import Card from '@/components/Card'
 
 
 
@@ -16,11 +17,20 @@ export const metadata = {
 
 export default function Home() {
   return <div className='pb-12 '>
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-GRTF9MTE6W" />
+    <Script id='google-analytics'>
+      {`window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  
+  gtag('config', 'G-GRTF9MTE6W');
+  `}
+    </Script>
     <main className='flex justify-center w-full'>
       <Banner />
     </main>
     <div className=" relative flex flex-wrap flex-col gap-24 max-w-screen-2xl px-2 rounded-3xl  w-full m-auto ">
-      <MoveLeft>
+      <FadeIn>
         <section id='descripcion' className=" dark:bg-gray-900 mx-auto mt-12">
           <div className="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6 ">
             <div className="max-w-screen-lg">
@@ -30,11 +40,17 @@ export default function Home() {
             </div>
           </div>
         </section>
+      </FadeIn>
 
-      </MoveLeft>
-      <section id='servicios' className="p-8 dark:bg-gray-800 m-auto" >
-        <h2 className='text-center text-4xl font-bold text-gray-700'>Servicios</h2>\
-        <MoveLeft>
+
+      <section id='servicios' className="p-8 dark:bg-gray-800 m-auto flex w-full flex-col gap-12" >
+        <h2 className='text-center text-4xl font-bold text-gray-700'>Servicios</h2>
+        <FadeIn>
+          <section className=' flex flex-wrap gap-12 justify-evenly'>
+            {servicios.map((servicio, index) => <Card key={index} data={servicio} />)}
+          </section>
+        </FadeIn>
+        <FadeIn>
           <div className='flex flex-row  items-center flex-wrap md:flex-row gap-4 justify-evenly mb-24  '>
             <div className='w-2/5'>
               <GridCta items={carousel1} />
@@ -47,8 +63,8 @@ export default function Home() {
             </div>
 
           </div>
-        </MoveLeft>
-        <MoveRight>
+        </FadeIn>
+        <FadeIn>
           <div className='flex flex-wrap flex-row-reverse items-center  md:flex-row gap-4 justify-evenly'>
             <div className='w-2/5'>
               <GridCta items={carousel2} />
@@ -59,10 +75,10 @@ export default function Home() {
               <ButtonCta />
             </div>
           </div>
-        </MoveRight>
+        </FadeIn>
       </section>
 
-      <ZoomIn>
+      <FadeIn>
         <section id='casos' className="p-8 dark:bg-gray-800 m-auto">
           <div className='py-8'>
             <h2 className='text-center text-4xl font-bold text-gray-700'>Empresas que han confiado en nosotros</h2>
@@ -73,7 +89,7 @@ export default function Home() {
           <h3 className='py-8 text-center font-medium text-2xl text-gray-900'>Sector privado</h3>
           <Logos logo={logos.privados} height={24} />
         </section >
-      </ZoomIn>
+      </FadeIn>
       <section id='team' className="p-8 dark:bg-gray-800 m-auto">
 
         <Team />
@@ -85,9 +101,9 @@ export default function Home() {
         </FadeIn>
       </section>
       <section id='redes' className='flex flex-col mx-auto gap-12'>
-      <iframe src="https://www.instagram.com/p/CvX6Yk-pO-4/embed" className='md:w-[340px] w-full h-[400px] md:h-[500px]' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+        <iframe src="https://www.instagram.com/p/CvX6Yk-pO-4/embed" className='md:w-[340px] w-full h-[400px] md:h-[500px]' frameborder="0" scrolling="no" allowtransparency="true"></iframe>
 
-      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farteinnovacolombia&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1376175039861911" width="340" height="500"  scrolling="no" frameborder="0" allowFullScreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Farteinnovacolombia&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1376175039861911" width="340" height="500" scrolling="no" frameborder="0" allowFullScreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
       </section>
     </div>
   </div>

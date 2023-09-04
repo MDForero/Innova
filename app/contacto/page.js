@@ -17,7 +17,7 @@ const medios = [
 ]
 
 export default function page() {
-    return (<div className="text-gray-300">
+    return (<div className="text-gray-950">
         <main className="relative">
             <Image src={contacto} width={0} height={0} alt="Contacto" className="w-full h-[400px] object-cover" />
 

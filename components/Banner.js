@@ -1,5 +1,4 @@
 "use client"
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Carousel } from 'react-bootstrap'
 import Image from 'next/image'
 import img0 from '../public/slider1.jpg'

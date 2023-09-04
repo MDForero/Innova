@@ -3,7 +3,11 @@ import colaborador1 from '../public/images/teammate/Sergio Frias.png'
 import colaborador2 from '../public/images/teammate/Javier Arias.png'
 import colaborador3 from '../public/images/teammate/Yeison Gonzales.png'
 import colaborador4 from '../public/images/teammate/andres.png'
-import { faFacebook, faInstagram, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
+import {
+    faFacebook,
+    faInstagram,
+    faWhatsapp
+} from '@fortawesome/free-brands-svg-icons'
 
 import img0 from '@/public/images/logos/anayibe.png'
 import img1 from '@/public/images/logos/Arepa y tizon.png'
@@ -76,202 +80,495 @@ import serimg25 from '@/public/images/servicios/1 (26).jpg'
 import serimg26 from '@/public/images/servicios/1 (27).jpg'
 import serimg27 from '@/public/images/servicios/1 (28).jpg'
 import serimg28 from '@/public/images/servicios/1 (29).jpg'
+import { CameraIcon, ChartPieIcon, CodeBracketIcon, DocumentCheckIcon, MegaphoneIcon, NewspaperIcon, PrinterIcon, SwatchIcon } from '@heroicons/react/24/outline'
+import { faBullhorn, faPrint, faStamp } from '@fortawesome/free-solid-svg-icons'
 
 
 
 
 export const carousel1 = [
-    { img: serimg0, alt: 'sabana' },
-    { img: serimg1, alt: 'ejercito' },
-    { img: serimg2, alt: 'villanueva' },
-    { img: serimg3, alt: 'massy' },
-    { img: serimg3, alt: 'massy' },
-    { img: serimg3, alt: 'massy' },
+    {
+        img: serimg0,
+        alt: 'sabana'
+    },
+
+    {
+        img: serimg1,
+        alt: 'ejercito'
+    },
+
+    {
+        img: serimg2,
+        alt: 'villanueva'
+    },
+
+    {
+        img: serimg3,
+        alt: 'massy'
+    },
+
+    {
+        img: serimg3,
+        alt: 'massy'
+    },
+
+    {
+        img: serimg3,
+        alt: 'massy'
+    },
+
 ]
 
 export const carousel2 = [
-    { img: serimg4, alt: 'concejo' },
-    { img: serimg5, alt: 'normal' },
-    { img: serimg6, alt: 'tecnico' },
-    { img: serimg7, alt: 'meta' },
-    { img: serimg7, alt: 'meta' },
-    { img: serimg7, alt: 'meta' },
+    {
+        img: serimg4,
+        alt: 'concejo'
+    },
+
+    {
+        img: serimg5,
+        alt: 'normal'
+    },
+
+    {
+        img: serimg6,
+        alt: 'tecnico'
+    },
+
+    {
+        img: serimg7,
+        alt: 'meta'
+    },
+
+    {
+        img: serimg7,
+        alt: 'meta'
+    },
+
+    {
+        img: serimg7,
+        alt: 'meta'
+    },
+
 ]
 
 export const logos = {
     privados: [
-        { img: img0, alt: 'Anayibe torres' },
-        { img: img1, alt: 'Arepa y tizon' },
-        { img: img2, alt: 'Asovida' },
-        { img: img3, alt: 'Blue' },
-        { img: img4, alt: 'ByA' },
-        { img: img5, alt: 'Cactus' },
-        { img: img6, alt: 'Casa de Reinas' },
-        { img: img7, alt: 'Chocofantasy' },
-        { img: img8, alt: 'Cositas Lindas' },
-        { img: img9, alt: 'EDS Morichal' },
-        { img: img10, alt: 'El campo- mi placita' },
-        { img: img11, alt: 'El profe' },
-        { img: img12, alt: 'Ferretodo' },
-        { img: img13, alt: 'Game center' },
-        { img: img14, alt: 'Intimo' },
-        { img: img15, alt: 'La Corona' },
-        { img: img16, alt: 'La Roca' },
-        { img: img17, alt: 'los lagos' },
-        { img: img18, alt: 'merengon' },
-        { img: img19, alt: 'monserrat' },
-        { img: img20, alt: 'Olimpico' },
-        { img: img21, alt: 'palo de agua' },
-        { img: img22, alt: 'piolina' },
-        { img: img23, alt: 'RyC eventos' },
-        { img: img24, alt: 'Tasajera' },
-        { img: img25, alt: 'tora no maki' },
-        { img: img26, alt: 'Valthi' },],
+        {
+            img: img0,
+            alt: 'Anayibe torres'
+        },
+
+        {
+            img: img1,
+            alt: 'Arepa y tizon'
+        },
+
+        {
+            img: img2,
+            alt: 'Asovida'
+        },
+
+        {
+            img: img3,
+            alt: 'Blue'
+        },
+
+        {
+            img: img4,
+            alt: 'ByA'
+        },
+
+        {
+            img: img5,
+            alt: 'Cactus'
+        },
+
+        {
+            img: img6,
+            alt: 'Casa de Reinas'
+        },
+
+        {
+            img: img7,
+            alt: 'Chocofantasy'
+        },
+
+        {
+            img: img8,
+            alt: 'Cositas Lindas'
+        },
+
+        {
+            img: img9,
+            alt: 'EDS Morichal'
+        },
+
+        {
+            img: img10,
+            alt: 'El campo- mi placita'
+        },
+
+        {
+            img: img11,
+            alt: 'El profe'
+        },
+
+        {
+            img: img12,
+            alt: 'Ferretodo'
+        },
+
+        {
+            img: img13,
+            alt: 'Game center'
+        },
+
+        {
+            img: img14,
+            alt: 'Intimo'
+        },
+
+        {
+            img: img15,
+            alt: 'La Corona'
+        },
+
+        {
+            img: img16,
+            alt: 'La Roca'
+        },
+
+        {
+            img: img17,
+            alt: 'los lagos'
+        },
+
+        {
+            img: img18,
+            alt: 'merengon'
+        },
+
+        {
+            img: img19,
+            alt: 'monserrat'
+        },
+
+        {
+            img: img20,
+            alt: 'Olimpico'
+        },
+
+        {
+            img: img21,
+            alt: 'palo de agua'
+        },
+
+        {
+            img: img22,
+            alt: 'piolina'
+        },
+
+        {
+            img: img23,
+            alt: 'RyC eventos'
+        },
+
+        {
+            img: img24,
+            alt: 'Tasajera'
+        },
+
+        {
+            img: img25,
+            alt: 'tora no maki'
+        },
+
+        {
+            img: img26,
+            alt: 'Valthi'
+        },
+    ],
+
     publicos: [
         {
             img: sabana,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: ejercito,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: villanueva,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: massy,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: concejo,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: normal,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: tecnico,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: meta,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: fiscalia,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: redSalud,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: ccc,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: gobernacioMeta,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: ecopetrol,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
         {
             img: ocensa,
+
             alt: 'logo de empresas que han confiado en nosotros'
         },
+
 
     ]
 }
 export const team = [
     {
         name: 'Liced Rojas',
+
         role: 'Asistente administrativo',
+
         descripcion: "Nuestro amable asistente administrativo es el núcleo de nuestra organización. Con habilidades excepcionales de organización y una actitud proactiva, mantiene el flujo de trabajo eficiente y efectivo. ",
+
         imageUrl: colaborador0,
+
         social: [
             {
                 icon: faFacebook,
+
                 href: 'https://www.facebook.com/lizeeth.rojas.7'
             },
+
             {
                 icon: faInstagram,
+
                 href: 'https://www.instagram.com/liced_21/'
             }
 
         ]
     },
+
     {
         name: 'Jeisson González',
+
         role: 'Fotografo',
+
         descripcion: " Nuestro talentoso fotógrafo es un apasionado de la captura de momentos especiales y únicos. Con un ojo meticuloso para los detalles y una creatividad innata, se especializa en retratar emociones y contar historias a través de sus imágenes.",
+
         imageUrl: colaborador3,
+
         social: [
             {
                 icon: faFacebook,
+
                 href: 'https://www.facebook.com/yeeiizon.goonsalez'
             },
+
             {
                 icon: faInstagram,
+
                 href: 'https://www.facebook.com/yeeiizon.goonsalez'
             }
 
         ]
     },
+
     {
         name: 'Andres Piñeros',
+
         role: 'Diseñador',
+
         descripcion: " Nuestro talentoso diseñador es un experto en dar vida a las ideas a través de la creatividad visual. Con una sensibilidad artística excepcional y una pasión por la estética, se destaca en la creación de diseños innovadores y atractivos. ",
+
         imageUrl: colaborador4,
+
         social: [
             {
                 icon: faFacebook,
+
                 href: 'https://www.facebook.com/andresfelipe.riofriopineros'
             },
+
             {
                 icon: faInstagram,
+
                 href: 'https://www.instagram.com/pinerosandres945/'
             }
         ]
     },
+
     {
         name: 'Javier Arias',
+
         role: 'Gerente general',
+
         descripcion: "Nuestro dedicado Gerente General es el líder de nuestro equipo y la fuerza motriz detrás de nuestra empresa. Con una visión estratégica y una vasta experiencia en el campo publicidad, dirige y supervisa todas las operaciones con sabiduría y eficacia.",
+
         imageUrl: colaborador2,
+
         social: [
             {
                 icon: faFacebook,
+
                 href: 'https://www.facebook.com/JAVIERARIASV'
             },
+
             {
                 icon: faInstagram,
+
                 href: 'https://www.instagram.com/javierariasinnova/'
             }
         ]
     },
+
 ]
 
-export const contacto ={
+export const contacto = {
     email: 'contacto@innovacasanare.com',
     phone: '+573133898130',
     address: 'Carrera 18 #N° 9 - 58, Alcaravanes, Monterrey, Casanare',
     ubicacion: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d321.51611359002163!2d-72.89552000942759!3d4.878035259930888!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6ad280b04865a9%3A0xf0896dbad89a138a!2sINNOVA%20FOTOGRAF%C3%8DA%20Y%20PUBLICIDAD!5e0!3m2!1ses!2sco!4v1690732020821!5m2!1ses!2sco',
+
     social: [
         {
             icon: faFacebook,
+
             href: 'https://www.facebook.com/arteinnovacolombia'
         },
+
         {
             icon: faInstagram,
+
             href: 'https://www.instagram.com/instainnova/'
         },
+
         {
             icon: faWhatsapp,
+
             href: `https://api.whatsapp.com/send?phone=57$3133898130&text=Hola%20Innova`
         }]
 }
+
+export const servicios = [
+    {
+        name: 'Avisos',
+        description: 'Build strategic funnels that will convert',
+        icon: faBullhorn
+    },
+
+    {
+        name: 'Diseño Web',
+        description: 'Your customers’ data will be safe and secure',
+        icon: '/svg/web.svg'
+    },
+
+    {
+        name: 'Fotografía',
+        description: 'Connect with third-party tools',
+        icon: '/svg/cam.svg'
+    },
+
+    {
+        name: 'Marketing Digital',
+        description: 'Build strategic funnels that will convert',
+        icon: '/svg/marketing.svg'
+    },
+
+    {
+        name: 'Sellos',
+        description: 'Build strategic funnels that will convert',
+        icon: faStamp
+    },
+
+
+    {
+        name: 'Tampografia',
+        description: 'Get a better understanding of your traffic',
+        icon: faPrint
+    },
+
+]
+
+export const politicas = [
+    {
+        title: "Calidad y excelencia:",
+        text: 'Nos esforzamos por brindar servicios de fotografía y publicidad de la más alta calidad a nuestros clientes. Buscamos constantemente la excelencia en cada proyecto que emprendemos, cumpliendo con los estándares profesionales y satisfaciendo las expectativas de nuestros clientes.',
+    },
+    {
+        title: "Ética y transparencia:",
+        text: 'Actuamos de manera ética y transparente en todas nuestras interacciones comerciales. Cumplimos con las leyes y regulaciones aplicables y promovemos prácticas comerciales justas y honestas. ',
+    },
+    {
+        title: "Política de privacidad:",
+        text: 'En INNOVA nos comprometemos a proteger la privacidad de nuestros clientes. No compartiremos, venderemos ni alquilaremos su información personal a terceros. Mantenemos sus datos seguros y protegidos, y los utilizamos únicamente para mejorar nuestros servicios y ofrecerle una experiencia personalizada.',
+    },
+    {
+        title: "Responsabilidad social:",
+        text: 'Contribuimos al desarrollo de nuestras comunidades y sociedades. Buscamos oportunidades para participar en iniciativas benéficas y actividades de responsabilidad social corporativa. Nos involucramos activamente en proyectos y acciones que beneficien a las personas y al medio ambiente en nuestras comunidades.',
+    },
+    {
+        title: "Política de medio ambiente:",
+        text: 'En INNOVA nos preocupa el impacto ambiental de nuestras actividades. Nos comprometemos a reducir nuestro impacto ambiental y a trabajar en la implementación de prácticas y políticas sostenibles en nuestra empresa. Nos esforzamos por reducir nuestro consumo de energía, agua y recursos naturales, y por minimizar nuestra producción de residuos y emisiones contaminantes.',
+    },
+    {
+        title: "Seguridad y salud ocupacional:",
+        text: 'Nos preocupamos por la seguridad y la salud de nuestros empleados y colaboradores. Implementamos medidas de seguridad adecuadas para prevenir accidentes y lesiones en el lugar de trabajo. Promovemos la conciencia sobre la salud ocupacional y fomentamos un entorno de trabajo seguro y saludable.',
+    },
+
+]

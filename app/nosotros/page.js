@@ -1,3 +1,4 @@
+
 import Image from 'next/image'
 import Innova from "@/public/images/servicios/logogray.jpg"
 import teamimg from '@/public/images/teammate/PerfilINNOVA.jpg'
@@ -5,7 +6,8 @@ import Teammate from '@/components/Teammate'
 import mision from "@/public/images/servicios/1 (19).jpg"
 import Team from '@/components/Team'
 import { faFacebook, faInstagram, faLinkedin, faWhatsapp } from '@fortawesome/free-brands-svg-icons'
-import { team } from '@/data/data'
+import { team, politicas } from '@/data/data'
+import FadeIn from '@/components/Animation'
 
 export const metadata = {
   title: "Innova | Nosotros",
@@ -18,7 +20,7 @@ export default function Nosotros() {
 
     <section className='flex text-black py-14 flex-col items-center md:flex-row justify-evenly flex-wrap'>
       <div className='w-full md:w-4/5 text-justify '>
-        <div className='min-h-[70vh] text-black flex md:flex-row-reverse flex-col justify-around item-center'>
+        <div className='min-h-[600px] text-black flex md:flex-row-reverse flex-col justify-around item-center'>
           <section className='md:w-2/5'>
             <h2 className='text-3xl py-4 text-center font-bold'>Misión:</h2>
             <p className='text-xl'>
@@ -29,7 +31,7 @@ export default function Nosotros() {
 
           <Image src={mision} width={0} height={0} alt="mision" className="md:w-2/5 h-[450px] object-cover" />
         </div>
-        <div className='min-h-[70vh] text-black flex md:flex-row flex-col justify-around item-center'>
+        <div className='min-h-[600px] text-black flex md:flex-row flex-col justify-around item-center'>
           <section className='md:w-2/5'>
             <h2 className='text-3xl py-4 text-center font-bold'>Visión:</h2>
             <p className='text-xl'>
@@ -45,6 +47,16 @@ export default function Nosotros() {
       <div className="flex flex-col items-center md:flex-row justify-evenly flex-wrap mx-auto">
         {team.map((item, index) => (<Teammate teammate={item} key={index} />))}
       </div>
+    </section>
+    <section>
+      <h1 className='text-center pt-8 font-bold text-2xl  lg:text-4xl' >Politicas de Innova Fotografia y Publicidad</h1>
+      {politicas.map((item, index) => <FadeIn key={index}>
+        <article className='max-w-6xl mx-auto p-4 text-justify' key={index}>
+          <h2 className='text-xl lg:text-2xl font-semibold center'>{item.title}</h2>
+          <p className='text-md lg:text-lg font-medium '>{item.text}</p>
+        </article>
+      </FadeIn>
+      )}
     </section>
   </div >
 
